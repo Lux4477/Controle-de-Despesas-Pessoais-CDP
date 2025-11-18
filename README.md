@@ -62,11 +62,12 @@ Relatórios e estatísticas
     5. receitas (obtidas do banco de dados)  
     6. data_de_despesa  
     7. meses_comparar  
+    8. n_meses (usado para comparar receitas e despesas)  
   Métodos  
     1. agrupar despesas por forma de pagamento  
     2. calcular percentual de cada categoria em relação ao total de despesas  
     3. calcular o mês mais econômico  
-    4. comparar as receitas e despesas dos últimos 3 meses  
+    4. comparar as receitas e despesas dos últimos n meses  
     5. gerar relatório demonstrando os cálculos realisados pela classe, o agrupamento e a comparação e também os totais de despesas e receitas feitos pelo orçamento  
   Relações:  
   Demonstra ao usuário todos os processos realizados em formato de relatório  
@@ -86,9 +87,12 @@ Alertas automáticos
 Configurações  
   Atributos  
     1. Alerta.minimo_des  
+    2. Relatorio.n_meses  
+    3. meta  
   Métodos  
-    1. alterar valor mínimo para alerta de despesa  
-    2. alterar número de meses de comparativo  
+    1. alterar valor mínimo para alerta de despesa (minimo_des)  
+    2. alterar número de meses de comparativo (n_meses)  
     3. definir meta mensal de economia  
   Relações:  
+  Permite alterar alguns valores de outras classes, especificado nos métodos (como n_meses)  
   
